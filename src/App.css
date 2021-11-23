@@ -16,7 +16,7 @@ article {
   border-radius: 10px;
   margin: 50px auto 20px;
   padding: 30px;
-  transform: translate(0px, 50px);
+  transform: translate(0px, 100px);
   overflow: hidden;
   box-shadow: 3px 3px 10px #ccc;
 }
@@ -68,4 +68,11 @@ article #timer{
   article {
     width: 100%;
   }
+
+  article h3 {
+    padding: 11px;
+    font-size: 29px;
+  }
+
+
 }
