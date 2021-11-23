@@ -10,12 +10,13 @@ body {
 }
 
 article {
-  width: 300px;
+  width: 50%;
   text-align: center;
   background-color: #68b04d;
   border-radius: 10px;
   margin: 50px auto 20px;
   padding: 30px;
+  transform: translate(0px, 50px);
   overflow: hidden;
   box-shadow: 3px 3px 10px #ccc;
 }
@@ -23,27 +24,29 @@ article {
 article h3 {
   padding: 10px;
   color: #fff;
+  font-size: 30px;
 }
 article .count {
   padding: 5px;
   margin-bottom: 15px;
 }
 article #timer{
-  padding: 5px;
+  padding: 10px;
   color: crimson;
   background-color: aliceblue;
   border-radius: 2px;
+  font-size: 30px;
 }
 
 .button {
-  background-color: #008CBA; /* Green */
+  background-color: #008CBA;
   border: none;
   color: white;
-  padding: 10px 30px;
+  padding: 15px 50px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
+  font-size: 20px;
   /* margin: 15px 10px; */
   cursor: pointer;
   border-radius: 5px;

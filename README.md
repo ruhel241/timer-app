@@ -1,2 +1,2 @@
-# waiting-app
+# Timer App
 React simple countdown app
