@@ -37,7 +37,7 @@ class App extends React.Component {
                 sec = sec - 1;
             } else {
               clearInterval(this.countDown);
-              document.getElementById("timer").innerHTML = 'Your Lunch Brack Is Finished';
+              document.getElementById("timer").innerHTML = 'Your Lunch Break Is Finished';
             }
       }, 1000);
     }
@@ -58,7 +58,7 @@ class App extends React.Component {
     return (
       <div className="App">
         <article className="clock">
-          <h3>Lunch Brack Timer <br/> Apps</h3>
+          <h3>Lunch Break Timer <br/> Apps</h3>
           <div className="count">
             <div id="timer">30:00</div>
           </div>
