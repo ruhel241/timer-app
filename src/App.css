@@ -21,10 +21,15 @@ article {
   box-shadow: 3px 3px 10px #ccc;
 }
 
+.App {
+  margin: 30px;
+}
+
 article h3 {
   padding: 10px;
   color: #fff;
   font-size: 30px;
+  font-family: cursive;
 }
 article .count {
   padding: 5px;
@@ -56,3 +61,11 @@ article #timer{
   background-color: #e7e7e7; 
   color: black;
 } /* Gray */ 
+
+
+
+@media only screen and (max-width: 600px) {
+  article {
+    width: 100%;
+  }
+}
