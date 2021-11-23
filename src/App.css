@@ -16,7 +16,7 @@ article {
   border-radius: 10px;
   margin: 50px auto 20px;
   padding: 30px;
-  transform: translate(0px, 100px);
+  transform: translate(0px, 150px);
   overflow: hidden;
   box-shadow: 3px 3px 10px #ccc;
 }

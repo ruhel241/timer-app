@@ -58,7 +58,7 @@ class App extends React.Component {
     return (
       <div className="App">
         <article className="clock">
-          <h3>Lunch Brack Timer Apps</h3>
+          <h3>Lunch Brack Timer <br/> Apps</h3>
           <div className="count">
             <div id="timer">30:00</div>
           </div>
