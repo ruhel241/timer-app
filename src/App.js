@@ -12,34 +12,30 @@ class App extends React.Component {
   }
 
   render() {
-    // const countDown;
-    var sec = 1800;
-
+   
     const countDownStart = () => {
       this.setState({
         startAction: false
       })
+      
+      var added30Min = new Date().getTime() + (30*60*1000);
 
-      this.countDown = setInterval(function () {
-          var min = Math.floor(sec / 60);
-          var remSec  = sec % 60;
-            
-            if (remSec < 10) {
-              remSec = '0' + remSec;
-            }
-            if (min < 10) {
-              min = '0' + min;
-            }
-
-            document.getElementById("timer").innerHTML = min + ":" + remSec;
-            
-            if (sec > 0) {
-                sec = sec - 1;
-            } else {
+      this.countDown =  setInterval( () => {
+          const startTime = new Date().getTime();
+          const timeleft = added30Min - startTime;
+          
+          const minutes = Math.floor((timeleft  / (1000 * 60)));
+          const seconds = Math.floor((timeleft % (1000 * 60)) / 1000);
+              
+          // Result is output to the specific element
+          document.getElementById("timer").innerHTML = minutes + ":" + seconds
+          
+            if (timeleft < 0) {
               clearInterval(this.countDown);
               document.getElementById("timer").innerHTML = 'Your Lunch Break Is Finished';
             }
       }, 1000);
+      
     }
     
     // const countDownPause = () => {
