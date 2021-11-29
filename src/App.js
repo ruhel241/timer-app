@@ -32,7 +32,7 @@ class App extends React.Component {
           
             if (timeleft < 0) {
               clearInterval(this.countDown);
-              document.getElementById("timer").innerHTML = 'Your Lunch Break Is Finished';
+              document.getElementById("timer").innerHTML = 'Your Lunch Break Is Over';
             }
       }, 1000);
       
